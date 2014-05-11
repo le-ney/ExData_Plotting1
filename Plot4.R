@@ -12,7 +12,7 @@ plot.4 <- function(fileName){
         png(file="plot_4.png", height=480, width=480) #set and open PNG file
         par(mfrow=c(2,2))
         with(dataSet, { #plot first graph
-                plot(Date,Global_active_power, xlab="", ylab="Global Active Power (kilowatts)",pch=NA) 
+                plot(Date,Global_active_power, xlab="", ylab="Global Active Power",pch=NA) 
                 lines(Date, Global_active_power)
                 #plot second
                 plot(Date,Voltage, xlab="datetime", ylab="Voltage",pch=NA) 
