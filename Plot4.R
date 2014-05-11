@@ -24,7 +24,7 @@ plot.4 <- function(fileName){
                 lines(Date, Sub_metering_3, col='blue')
                 lg <- c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
                 cl <-  c('black', 'red', 'blue')
-                legend("topright", lg, col = cl, lty = c(1,1,1))
+                legend("topright", lg, col = cl, lty = c(1,1,1), bty="n")
                 #plot fourth
                 plot(Date,Global_reactive_power, xlab="datetime",pch=NA) 
                 lines(Date, Global_reactive_power)
